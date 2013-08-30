@@ -1,0 +1,27 @@
+{
+  "name": "allAttributes",
+  "title": "jQuery All Attributes",
+  "description": "jQuery plugin to override proper $.fn.attr method to return all attributes if no arguments provided.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ngs/jquery-allAttributes",
+  "author": {
+    "name": "Atsushi Nagase",
+    "email": "a@ngs.io",
+    "url": "http://ngs.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ngs/jquery-allAttributes.git"
+  },
+  "bugs": "https://github.com/ngs/jquery-allAttributes/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ngs/jquery-allAttributes/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
