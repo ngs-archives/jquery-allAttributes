@@ -1,6 +1,6 @@
-/*! jQuery All Attributes - v0.1.0 - 2013-08-30
+/*! jQuery All Attributes - v0.2.0 - 2014-04-30
 * https://github.com/ngs/jquery-allAttributes
-* Copyright (c) 2013 Atsushi Nagase; Licensed MIT */
+* Copyright (c) 2014 Atsushi Nagase; Licensed MIT */
 (function() {
 
   (function($) {
@@ -9,8 +9,10 @@
     var getAttributes, _attr;
     getAttributes = function(element) {
       var attr, attrs, hash, name, names, ref, value, _i, _len;
-      attrs = element.attributes;
       hash = {};
+      if (!(attrs = element.attributes)) {
+        return hash;
+      }
       for (_i = 0, _len = attrs.length; _i < _len; _i++) {
         attr = attrs[_i];
         names = attr.name.split('-');

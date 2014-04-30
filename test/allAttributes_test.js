@@ -4,6 +4,7 @@
     module("jquery-allAttributes");
     return test('$.fn.attr', function() {
       var div;
+      deepEqual($("<body href=\"foo\" data-foo-bar=\"baz\">Yay</body>").attr(), {});
       deepEqual($("<a href=\"foo\" data-foo-bar=\"baz\">Yay</a>").attr(), {
         href: 'foo',
         data: {
