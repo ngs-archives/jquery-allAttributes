@@ -1,7 +1,7 @@
 {
   "name": "jquery-all-attributes",
   "title": "jQuery All Attributes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Atsushi Nagase <a@ngs.io> (http://ngs.io)",
   "scripts": {
     "test": "grunt qunit"

@@ -6,8 +6,10 @@
     var getAttributes, _attr;
     getAttributes = function(element) {
       var attr, attrs, hash, name, names, ref, value, _i, _len;
-      attrs = element.attributes;
       hash = {};
+      if (!(attrs = element.attributes)) {
+        return hash;
+      }
       for (_i = 0, _len = attrs.length; _i < _len; _i++) {
         attr = attrs[_i];
         names = attr.name.split('-');

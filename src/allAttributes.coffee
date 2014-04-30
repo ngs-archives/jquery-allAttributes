@@ -10,8 +10,8 @@
   "use strict"
 
   getAttributes = (element)->
-    attrs = element.attributes
     hash = {}
+    return hash unless attrs = element.attributes
     for attr in attrs
       names = attr.name.split '-'
       value = attr.value
