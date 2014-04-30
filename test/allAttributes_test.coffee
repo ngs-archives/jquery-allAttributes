@@ -3,6 +3,7 @@
   module "jquery-allAttributes"
 
   test '$.fn.attr', ->
+    deepEqual $("""<body href="foo" data-foo-bar="baz">Yay</body>""").attr(), {}
     deepEqual $("""<a href="foo" data-foo-bar="baz">Yay</a>""").attr(), href: 'foo', data: foo: bar: 'baz'
     deepEqual $("""<a href="foo" data-foo="1" data-foo-bar="baz">Yay</a>""").attr(), href: 'foo', data: foo: _: 1, bar: 'baz'
     deepEqual $("""<a href="foo" data-foo-bar="1" data-foo-bar-baz="qux" data-foo="2">Yay</a>""").attr(), href: 'foo', data: foo: _: 2, bar: baz: 'qux', _: 1
